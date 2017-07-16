@@ -6,7 +6,7 @@
 
 	<groupId>com.valygard</groupId>
 	<artifactId>Lilypad</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<name>Lilypad</name>
 	<description>A Simple Java text editor</description>
 
@@ -14,7 +14,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
+	<!-- Build -->
 	<build>
+		<!-- Resource filtering -->
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
@@ -25,6 +27,9 @@
 				</excludes>
 			</resource>
 		</resources>
+		
+		<!-- Launch4J -->
+		
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -53,12 +58,6 @@
 					<mainClass>com.valygard.Lilypad</mainClass>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <artifactId>maven-resources-plugin</artifactId> <version>2.6</version> 
-				<executions> <execution> <id>copy-resources01</id> <phase>package</phase> 
-				<goals> <goal>copy-resources</goal> </goals> <configuration> <outputDirectory>${basedir}/target/classes/resources</outputDirectory> 
-				<encoding>UTF-8</encoding> <resources> <resource> <directory>${basedir}/src/main/resources</directory> 
-				<includes> <include>*.gif</include> <include>*.png</include> </includes> 
-				</resource> </resources> </configuration> </execution> </executions> </plugin> -->
 			<plugin>
 				<groupId>com.akathist.maven.plugins.launch4j</groupId>
 				<artifactId>launch4j-maven-plugin</artifactId>
@@ -84,12 +83,12 @@
 								<jdkPreference>preferJre</jdkPreference>
 							</jre>
 							<versionInfo>
-								<fileVersion>1.0.0.0</fileVersion>
+								<fileVersion>1.0.1.0</fileVersion>
 								<txtFileVersion>${project.version}</txtFileVersion>
 								<fileDescription>${project.name}</fileDescription>
 								<copyright>C</copyright>
-								<productVersion>1.0.0.0</productVersion>
-								<txtProductVersion>1.0.0.0</txtProductVersion>
+								<productVersion>1.0.1.0</productVersion>
+								<txtProductVersion>1.0.1.0</txtProductVersion>
 								<productName>${project.name}</productName>
 								<internalName>Lilypad</internalName>
 								<originalFilename>Lilypad.exe</originalFilename>
