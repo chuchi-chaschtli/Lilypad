@@ -1,8 +1,8 @@
 language: java
 notifications:
   email: false
-install: true
+install: false
 matrix:
   include:
-  - jdk: oraclejdk7
+  - jdk: oraclejdk8
     script: mvn clean package -e
