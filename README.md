@@ -12,6 +12,7 @@ You can use the GitHub <a href="https://github.com/AoHRuthless/Lilypad/issues">i
 Downloads for the executable file will be available soon :)
 
 <h3>Contributing</h3>
+
 Code contributions:
 * Wrap lines at 80 characters.
 * Follow general Oracle conventions and code guidelines.
